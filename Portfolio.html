@@ -18,8 +18,19 @@
         header {
             background: #333; /* Dark background for contrast */
             color: #fff; /* Light font color */
-            padding: 1rem 0;
+            padding: 2rem 0;
             text-align: center;
+        }
+
+        .profile-image {
+            width: 120px; /* Adjust as needed */
+            height: 120px; /* Match width for a perfect circle */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image scales properly */
+            margin: 0 auto 1rem; /* Centers the image and adds spacing below */
+            display: block; /* Centers in the container */
+            border: 3px solid #fff; /* Optional: Add a border for better aesthetics */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
         }
 
         header h1 {
@@ -80,7 +91,6 @@
         }
 
         ul li {
-            
             margin: 0.5rem 0;
             padding: 0.5rem;
             border-left: 4px solid #333;
@@ -119,6 +129,7 @@
 <body>
     <header>
         <div class="container">
+            <img src="https://i.ibb.co/JcWCXsJ/Profile-Photo.jpg" alt="Profile Picture" class="profile-image">
             <h1>Ranjanath R</h1>
             <p>Software Developer | Full-Stack Enthusiast</p>
             <nav>
@@ -133,6 +144,8 @@
         </div>
     </header>
 
+
+    
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
